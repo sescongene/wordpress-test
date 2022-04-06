@@ -1,0 +1,245 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[4]!./src/scss/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;700&display=swap);
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[4]!./src/scss/style.scss (1) ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../../assets/swish-bg.png") center top;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  padding: 50px 0;
+  font-size: 16px;
+  margin: 0;
+  color: #333333;
+}
+
+.main-header {
+  text-align: center;
+  color: #fff;
+}
+
+.main-header h1 {
+  font-family: "Lora", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0;
+}
+
+.main-header p {
+  font-weight: lighter;
+  max-width: 770px;
+  margin: 25px auto;
+}
+
+.sub-heading {
+  font-family: "Lora", serif;
+  margin-top: 40px;
+  font-size: 1.3em;
+}
+
+.donation-form {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 10px 100px 50px;
+  background: #fff;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+}
+
+.donation-form h2.form-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.donation-form .total-raised {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #5d8c92;
+}
+
+.donation-form .sub-title {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.donation-form #progress-bar {
+  max-width: 600px;
+  margin: 35px auto 45px;
+  background: #f1f1f1;
+}
+
+.donation-form #progress-bar .progress {
+  width: 10%;
+  padding-top: 21px;
+  background: #5d8c92;
+}
+
+.donation-form .description {
+  font-size: 0.8em;
+  font-weight: lighter;
+  max-width: 480px;
+  margin: 15px auto 0;
+}
+
+.amount-input {
+  margin: 0 auto;
+  max-width: 160px;
+  border: 1px solid #b8b8b8;
+  display: flex;
+  height: 35px;
+}
+
+.amount-input.wider {
+  max-width: 280px;
+}
+
+.amount-input.wider input:disabled {
+  background: #fff;
+}
+
+.amount-input > span {
+  display: flex;
+  flex: 1 0 auto;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: center;
+  background: #ebebeb 0% 0% no-repeat padding-box;
+}
+
+.amount-input > input {
+  border: transparent;
+  min-width: 0;
+  flex: 0 1 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  outline: none;
+  padding: 10px;
+}
+
+.radio-group {
+  margin-bottom: 40px;
+}
+
+.radio-group > label {
+  position: relative;
+  padding-left: 27px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-group > label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-group > label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-group > label:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+.radio-group > label .checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.radio-group > label .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #707070;
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group .sub-group {
+  flex: 0 1 calc(50% - 8px);
+}
+
+.form-group .sub-group input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 13px;
+}
+
+.submit-button {
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  font-size: 0.7em;
+  color: #fff;
+  background: #5d8c92;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.sub-section {
+  max-width: 1300px;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-section .featured-image {
+  flex: 0 1 calc(40% - 30px);
+}
+
+.sub-section .featured-image img {
+  width: 100%;
+}
+
+.sub-section .content {
+  flex: 0 1 calc(60% - 30px);
+  padding: 75px 45px;
+  background-image: url("../../assets/lower-left.png"), url("../../assets/upper-left.png"), url("../../assets/upper-right.png");
+  background-position: left bottom, left top, right top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.sub-section .content .sub-heading {
+  margin-top: 0;
+}
+
+.sub-section .content .description {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=style.css.map*/

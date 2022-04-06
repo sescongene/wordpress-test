@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;700&display=swap');
+
+$lora: 'Lora', serif;
+$montserrat: 'Montserrat', sans-serif;
+$white: #fff;
+$green: #5d8c92;
+$black: #333333;
+$grey: #f1f1f1;
+$light-grey: #ebebeb;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url('../../assets/swish-bg.png') center top;
+  background-repeat: no-repeat;
+  font-family: $montserrat;
+  padding: 50px 0;
+  font-size: 16px;
+  margin: 0;
+  color: $black;
+}
+
+.main-header {
+  text-align: center;
+
+  color: $white;
+  h1 {
+    font-family: $lora;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+  }
+  p {
+    font-weight: lighter;
+    max-width: 770px;
+    margin: 25px auto;
+  }
+}
+
+.sub-heading {
+  font-family: $lora;
+  margin-top: 40px;
+  font-size: 1.3em;
+}
+
+.donation-form {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 10px 100px 50px;
+  background: $white;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 16px #0000001a;
+  border-radius: 15px;
+
+  h2.form-title {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .total-raised {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: $green;
+  }
+  .sub-title {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  #progress-bar {
+    max-width: 600px;
+    margin: 35px auto 45px;
+    background: $grey;
+    .progress {
+      width: 10%;
+      padding-top: 21px;
+      background: $green;
+    }
+  }
+  .description {
+    font-size: 0.8em;
+    font-weight: lighter;
+    max-width: 480px;
+    margin: 15px auto 0;
+  }
+}
+
+.amount-input {
+  margin: 0 auto;
+  max-width: 160px;
+  border: 1px solid #b8b8b8;
+  display: flex;
+  height: 35px;
+  &.wider {
+    max-width: 280px;
+    input:disabled {
+      background: #fff;
+    }
+  }
+
+  > span {
+    display: flex;
+    flex: 1 0 auto;
+
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    background: $light-grey 0% 0% no-repeat padding-box;
+  }
+  > input {
+    border: transparent;
+    min-width: 0;
+    flex: 0 1 auto;
+    font-family: $montserrat;
+    font-size: 1em;
+    outline: none;
+    padding: 10px;
+  }
+}
+
+.radio-group {
+  margin-bottom: 40px;
+  > label {
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: $white;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 1px;
+      left: 0px;
+      height: 18px;
+      width: 18px;
+      border: 1px solid #707070;
+      background-color: $white;
+      border-radius: 50%;
+      &:after {
+        top: 2px;
+        left: 2px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #707070;
+        content: '';
+        position: absolute;
+        display: none;
+      }
+    }
+  }
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  .sub-group {
+    flex: 0 1 calc(50% - 8px);
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid $light-grey;
+      outline: none;
+      font-family: $montserrat;
+      padding: 13px;
+    }
+  }
+}
+
+.submit-button {
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  font-size: 0.7em;
+  color: $white;
+  background: $green;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.sub-section {
+  max-width: 1300px;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .featured-image {
+    flex: 0 1 calc(40% - 30px);
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    flex: 0 1 calc(60% - 30px);
+    padding: 75px 45px;
+
+    background-image: url('../../assets/lower-left.png'),
+      url('../../assets/upper-left.png'), url('../../assets/upper-right.png');
+    background-position: left bottom, left top, right top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    .sub-heading {
+      margin-top: 0;
+    }
+    .description {
+      font-size: 0.8em;
+      font-weight: lighter;
+    }
+  }
+}

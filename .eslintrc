@@ -1,0 +1,11 @@
+{
+  "extends": ["plugin:@wordpress/eslint-plugin/esnext", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 2 // Means error
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
