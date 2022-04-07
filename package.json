@@ -47,5 +47,10 @@
     "compile:rtl": "rtlcss style.css style-rtl.css",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
+  },
+  "dependencies": {
+    "countup": "^1.8.2",
+    "jquery": "^3.6.0",
+    "sweetalert2": "^11.4.8"
   }
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;700&display=swap');
 
+// VARIABLES
 $lora: 'Lora', serif;
 $montserrat: 'Montserrat', sans-serif;
 $white: #fff;
@@ -8,6 +9,9 @@ $black: #333333;
 $grey: #f1f1f1;
 $light-grey: #ebebeb;
 
+
+
+//STYLES
 * {
   box-sizing: border-box;
 }
@@ -73,9 +77,13 @@ body {
     margin: 35px auto 45px;
     background: $grey;
     .progress {
-      width: 10%;
+      width: 0%;
       padding-top: 21px;
       background: $green;
+      -webkit-transition: width 3s ease-in-out;
+      -moz-transition: width 3s ease-in-out;
+      -o-transition: width 3s ease-in-out;
+      transition: width 3s ease-in-out;
     }
   }
   .description {
@@ -189,6 +197,7 @@ body {
   width: 160px;
   display: block;
   margin: 20px auto;
+  cursor: pointer;
   padding: 14px 0;
   border: none;
   outline: none;
@@ -197,6 +206,11 @@ body {
   background: $green;
   border-radius: 4px;
   text-transform: uppercase;
+}
+.submit-button:hover {
+  color: $green;
+  background: $white;
+  border: 1px solid $green;
 }
 
 .sub-section {
@@ -226,5 +240,21 @@ body {
       font-size: 0.8em;
       font-weight: lighter;
     }
+  }
+}
+
+.input-error {
+  font-size: 10px;
+  text-transform: capitalize;
+  color: red;
+  position: relative;
+  margin: 0;
+}
+
+.amount-input {
+  position: relative;
+  .input-error {
+    position: absolute;
+    bottom: -14px;
   }
 }

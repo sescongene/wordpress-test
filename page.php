@@ -19,17 +19,19 @@ get_header();
 	<div class="donation-form">
 		<div class="form-header">
 			<h2 class="sub-heading form-title">Lorem Ipsum</h2>
-			<div class="total-raised"><span class="currency">$</span><span id="total-amount">413,078</span></div>
+			<div class="total-raised"><span class="currency">$</span><span id="total-amount">0</span></div>
 			<div class="sub-title">of $4 million raised</div>
 		</div>
-		<form>
+		<form id="form">
+			<input type="hidden" name="action" value="submit_donation">
+			<input type="hidden" name="nonce" value="<?=wp_create_nonce(DONATION_THEME_NONCE)?>">
 			<div id="progress-bar">
 				<div class="progress"></div>
 			</div>
 
 			<div class="amount-input">
 				<span>$</span>
-				<input type="number" name="donation_amount">
+				<input type="number" name="donation_amount" id="donation_amount">
 			</div>
 			<div class="description">
 				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -39,26 +41,26 @@ get_header();
 
 			<h2 class="sub-heading">Select payment method</h2>
 			<div class="radio-group">
-				<label><input type="radio" name="payment_method">Paypal <span class="checkmark"></span></label>
-				<label><input type="radio" name="payment_method">Offline Donation <span class="checkmark"></span></label>
+				<label><input type="radio" value="Paypal" name="payment_method" checked>Paypal <span class="checkmark"></span></label>
+				<label><input type="radio" value="Offline Donation" name="payment_method">Offline Donation <span class="checkmark"></span></label>
 			</div>
 
 			<h2 class="sub-heading">Personal info</h2>
 			<div class="form-group">
 				<div class="sub-group">
-					<input type="text" name="first_name" placeholder="First Name*" required>
-					<input type="email" name="email" placeholder="Email*" required>
+					<input type="text" name="first_name" placeholder="First Name*" >
+					<input type="email" name="email" placeholder="Email*" >
 				</div>
 				<div class="sub-group">
-					<input type="text" name="last_name"  placeholder="Last Name*" required>
-					<input type="text" name="phone" placeholder="Phone*" required>
+					<input type="text" name="last_name"  placeholder="Last Name*" >
+					<input type="text" name="phone" placeholder="Phone*" >
 				</div>
 			</div>
 			<div class="amount-input wider">
 				<span>Donation total:</span>
 				<input type="text" name="donation_amount_copy" disabled>
 			</div>
-			<button class="submit-button">Donate Now</button>
+			<input type="submit" class="submit-button" value="Donate Now">
 		</form>
 
 	</div>

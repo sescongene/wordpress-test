@@ -77,9 +77,10 @@ body {
 }
 
 .donation-form #progress-bar .progress {
-  width: 10%;
+  width: 0%;
   padding-top: 21px;
   background: #5d8c92;
+  transition: width 3s ease-in-out;
 }
 
 .donation-form .description {
@@ -199,6 +200,7 @@ body {
   width: 160px;
   display: block;
   margin: 20px auto;
+  cursor: pointer;
   padding: 14px 0;
   border: none;
   outline: none;
@@ -207,6 +209,12 @@ body {
   background: #5d8c92;
   border-radius: 4px;
   text-transform: uppercase;
+}
+
+.submit-button:hover {
+  color: #5d8c92;
+  background: #fff;
+  border: 1px solid #5d8c92;
 }
 
 .sub-section {
@@ -240,6 +248,23 @@ body {
 .sub-section .content .description {
   font-size: 0.8em;
   font-weight: lighter;
+}
+
+.input-error {
+  font-size: 10px;
+  text-transform: capitalize;
+  color: red;
+  position: relative;
+  margin: 0;
+}
+
+.amount-input {
+  position: relative;
+}
+
+.amount-input .input-error {
+  position: absolute;
+  bottom: -14px;
 }
 
 /*# sourceMappingURL=style.css.map*/

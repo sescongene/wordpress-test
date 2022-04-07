@@ -81,9 +81,7 @@ module.exports = (env, argv) => ({
   module: {
     rules
   },
-  externals: {
-    jquery: 'jQuery'
-  },
+  
   plugins: plugins(argv),
   stats: 'verbose'
 });
