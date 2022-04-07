@@ -48,7 +48,8 @@ To start using all the tools that come with `_s`  you need to install the necess
 
 ```sh
 $ composer install
-$ npm install
+$ yarn install
+$ yarn run watch
 ```
 
 ### Available CLI commands
